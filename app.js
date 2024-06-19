@@ -1,7 +1,7 @@
 const express = require("express");
 
 require("dotenv").config();
-
+console.log(process.env.S_SCRT_KEY);
 const stripe = require("stripe")(process.env.S_SCRT_KEY);
 
 const app = express();
